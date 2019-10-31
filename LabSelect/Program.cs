@@ -5,6 +5,8 @@ using AdditionClasses;
 using Lab3Lib;
 using Lab4Lib;
 using Lab5Lib;
+using Lab6Lib;
+using Lab7Lib;
 
 namespace LabSelect {
     class Program {
@@ -53,6 +55,16 @@ namespace LabSelect {
                         consolePrinter.WriteLine(e.Message);
                     }
                     break;
+
+                case "6":
+                    try {
+                        consolePrinter.WriteLine(ConsoleCalculator.Calculate(consolePrinter.ReadLine()).ToString());
+                    }
+                    catch (Exception e) {
+                        consolePrinter.WriteLine(e.Message);
+                    }
+                    break;
+
                 default:
                     consolePrinter.WriteLine("Invalid number");
                     break;

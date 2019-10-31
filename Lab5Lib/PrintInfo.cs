@@ -4,6 +4,10 @@ using AdditionClasses;
 
 namespace Lab5Lib {
     public class PrintInfo {
+        /// <summary>
+        /// Print info about current assembly in tree view with all methods
+        /// </summary>
+        /// <param name="consolePrinter"></param>
         public static void PrintInfoAssembly(IPrinter consolePrinter) {
             foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies()) {
                 consolePrinter.WriteLine(assembly.ToString());
