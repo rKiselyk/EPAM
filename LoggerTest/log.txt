@@ -1,0 +1,4 @@
+10/15/2019 4:19:55 PM - Attempted to divide by zero.
+10/15/2019 4:26:51 PM - Attempted to divide by zero.
+10/15/2019 4:27:25 PM - Attempted to divide by zero.
+10/15/2019 4:27:50 PM - Attempted to divide by zero.
