@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AdditionClasses\AdditionClasses.csproj" />
+    <ProjectReference Include="..\Lab1Lib\Lab1Lib.csproj" />
+    <ProjectReference Include="..\Lab2Lib\Lab2Lib.csproj" />
     <ProjectReference Include="..\Lab3Lib\Lab3Lib.csproj" />
     <ProjectReference Include="..\Lab4Lib\Lab4Lib.csproj" />
     <ProjectReference Include="..\Lab5Lib\Lab5Lib.csproj" />
