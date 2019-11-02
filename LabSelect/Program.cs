@@ -1,12 +1,14 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Diagnostics;
 using AdditionClasses;
 using Lab3Lib;
 using Lab4Lib;
 using Lab5Lib;
 using Lab6Lib;
 using Lab7Lib;
+using Lab8Lib;
 
 namespace LabSelect {
     class Program {
@@ -56,13 +58,23 @@ namespace LabSelect {
                     }
                     break;
 
-                case "6":
+                case "7":
                     try {
-                        consolePrinter.WriteLine(ConsoleCalculator.Calculate(consolePrinter.ReadLine()).ToString());
+                        Calculator.Calculate(consolePrinter.ReadLine().ToString(),consolePrinter);
                     }
                     catch (Exception e) {
                         consolePrinter.WriteLine(e.Message);
                     }
+                    break;
+
+                case "8":
+                    Stopwatch watch = new Stopwatch();
+
+                    watch.Start();
+                    consolePrinter.WriteLine(MatrixOperation.sumInThread(MatrixOperation.GenerateMatrix(1000, 1000), 10).ToString());
+                    watch.Stop();
+
+                    consolePrinter.WriteLine("Time: " + watch.Elapsed.ToString());
                     break;
 
                 default:

@@ -16,6 +16,7 @@
     <ProjectReference Include="..\Lab5Lib\Lab5Lib.csproj" />
     <ProjectReference Include="..\Lab6Lib\Lab6Lib.csproj" />
     <ProjectReference Include="..\Lab7Lib\Lab7Lib.csproj" />
+    <ProjectReference Include="..\Lab8Lib\Lab8Lib.csproj" />
     <ProjectReference Include="..\LoggerLib\LoggerLib.csproj" />
   </ItemGroup>
 
